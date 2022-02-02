@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link th:href="@{/css/bootstrap.min.css}"
+          href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>아이디 찾기</h2>
+    </div>
+    <form action="" th:action method="post">
+        <div>
+            <label for="userName">이름</label>
+            <input type="text" id="userName" name="userName" class="form-control" placeholder="이름을 입력하세요">
+        </div>
+        <div>
+            <label for="userEmail">이메일</label>
+            <input type="text" id="userEmail" name="userEmail" class="form-control" placeholder="이메일를 입력하세요">
+        </div>
+        <div class="col">
+            <button class="w-100 btn btn-primary btn-lg mt-2" type="submit">인증번호 받기</button>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col">
+            <input type="text" id="AuthNumber" name="AuthNumber" class="form-control w-100" style="margin-top:13px" placeholder="인증번호 입력">
+        </div>
+        <div class="col">
+            <button  class="w-100 btn btn-primary btn-lg mt-2" onclick="location.href='findId.html'">아이디 조회</button>
+        </div>
+    </div>
+    <hr class="my-1">
+    <div style="float:right">
+        <a class="w-100 text-center p-0 btn btn-default px-0" href="loginForm.html">뒤로 가기</a>
+    </div>
+</div> <!-- /container -->
+</body>
+</html>
