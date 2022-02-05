@@ -11,6 +11,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @RequiredArgsConstructor
 public class AccountController {
 
+    final AccountService accountService;
 
     //로그인 뷰
     @GetMapping("/login")
